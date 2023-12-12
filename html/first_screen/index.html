@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite animes</title>
+
+    <style>
+        .img-src {
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-src">
+        <img src="images/gon.jpg" alt="" srcset="" style="width: 30rem;">
+    </div>
+    <h1>Digite seu Anime favorito</h1>
+    <form action="#" id="anime_name_form">
+        <input type="text" name="anime" id="anime">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <ol>
+
+    </ol>
+
+    <script>
+        document.getElementById("anime_name_form").addEventListener(
+            "submit", function(form_istance){
+                // prevent default to not change the page
+                form_istance.preventDefault();
+
+                let list = document.getElementsByTagName("ol")[0];
+                // create a new li element
+                let li = document.createElement("li");
+                // get the value of the input
+                let anime_name = document.getElementById("anime").value;
+                console.log(anime_name);
+                li.textContent = anime_name;
+                list.appendChild(li);
+            }
+        )
+</script>
+</body>
+</html>
