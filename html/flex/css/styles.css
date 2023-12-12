@@ -1,0 +1,37 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+
+    /* flew-flow enable to use flex-direction and flex-wrap in only one method */
+    flex-flow: row wrap;
+}
+
+.flex-item {
+    background: tomato;
+    padding: 1.1rem;
+    margin: 1.1rem;
+    width: 7.1rem;
+    height: 7.1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.flex-item-grow {
+    /* grow enables the cell grow by mutiplying the size according the next cell  flex-grow */
+    /* flex grow 1 will duplicate the size */
+    flex-grow: 1;
+}
+
+.flex-item-shrink {
+    /* shrink enables the cell shrink by dividing the size according the next cell  flex-shrink */
+    /* flex shrink 1 will divide by 2 the size */
+    flex-shrink: 1;
+}
