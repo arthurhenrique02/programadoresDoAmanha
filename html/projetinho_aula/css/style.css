@@ -1,0 +1,97 @@
+/* DEFAULT CONFIGS */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    text-decoration: none;
+}
+
+/* var colors */
+:root {
+    --white-color: #f2f2f2;
+    --black-color: #000000;
+    --navbar-color: rgba(0, 0, 255, 0.62)
+
+}
+
+/* body */
+body {
+    /* background */
+    background-image: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+/* NAV */
+.navbar {
+    background-color: var(--navbar-color);
+    color: var(--white-color);
+    padding: 0.938rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* navbar h1 */
+.navbar h1 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+/* navbar links */
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: .2rem;
+}
+
+.navbar-links li {
+    color: var(--white-color);
+    margin: 0 1.3rem;
+    font-size: 1.0rem;
+}
+
+.navbar-links:last-child {
+    margin: 0;
+}
+
+/* main */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    overflow: hidden hidden;
+}
+
+.main h2 {
+    color: var(--white-color);
+    font-size: 6.1rem;
+}
+
+.btns-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.btns-container .btn {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.8rem 2.2rem;
+    margin: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-display: bold;
+}
