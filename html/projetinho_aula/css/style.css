@@ -57,6 +57,11 @@ body {
     color: var(--white-color);
     margin: 0 1.3rem;
     font-size: 1.0rem;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-links li:hover {
+    color: green;
 }
 
 .navbar-links:last-child {
@@ -94,4 +99,10 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     font-display: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+.btns-container .btn:hover {
+    background-color: green;
+    color: var(--white-color);
 }
